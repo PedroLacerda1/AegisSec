@@ -35,8 +35,8 @@ interface AuthScreenProps {
 
 export function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
   const [isRegister, setIsRegister] = useState(false);
-  const [email, setEmail] = useState('pedrohenrilacerda@gmail.com');
-  const [password, setPassword] = useState('admin123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [role, setRole] = useState('Lead SecOps Cmdr');
   const [mfaCode, setMfaCode] = useState('');
@@ -272,18 +272,7 @@ export function AuthScreen({ onLoginSuccess }: AuthScreenProps) {
             </div>
 
             <div>
-              <div className="flex items-center justify-between">
-                <label className="font-semibold text-slate-300">Senha de Autenticação:</label>
-                {!isRegister && (
-                  <button
-                    type="button"
-                    onClick={() => setPassword('admin123')}
-                    className="text-[11px] text-slate-400 hover:text-blue-400"
-                  >
-                    Redefinir demo
-                  </button>
-                )}
-              </div>
+              <label className="font-semibold text-slate-300">Senha de Autenticação:</label>
               <div className="relative mt-1">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-500" />
                 <input
