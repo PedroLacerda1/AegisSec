@@ -1,0 +1,6 @@
+{
+  "name": "AegisSec Defense Ops - Cybersecurity Manager",
+  "description": "Plataforma de Operações de Ciberdefesa SOC com Gestão de Vulnerabilidades CVE, Remediação SOAR, Postura de Segurança e Integração Supabase/PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
